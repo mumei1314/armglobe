@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <style>
+            body{font-family: "Microsoft YaHei",serif;}
+            body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+            ol,ul,li{margin:0;padding:0;list-style:none;}
+            img{border:none;}
+        
+        </style>
+    </head>
+    <body>
+        <div id="wrap"></div>
+
+        <script>
+            var filePath = "categories/All.json";
+            filePath = encodeURI( filePath );
+            xhr = new XMLHttpRequest();
+            xhr.open( 'GET', filePath, true );
+            console.log(filePath);
+            console.log(xhr);
+            timeBins = JSON.parse( xhr.responseText ).timeBins;
+            console.log(timeBins);
+        </script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
